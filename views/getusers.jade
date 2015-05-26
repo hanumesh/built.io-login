@@ -1,9 +1,5 @@
-doctype html
-html(lang="en")
-    head
-        script
-        var data = #{vizJson};
-
-
+block content
+    each user in vizJson
+        div #{user}
 
 

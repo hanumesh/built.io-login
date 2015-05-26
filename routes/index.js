@@ -24,20 +24,24 @@ router.post("/login", function(req, res){
 //built_io_application_user
 // fetch all the users in class user
 
+username = [];
+newjson = [];
+
+
 router.get('/getusers', function(req, res) {
 
-    var Query = Bapp.Class('user').Query;
-    var query = Query();
-    query = query.ascending('username');
+    var query = Bapp.Class('user').Query();
     query.toJSON().exec()
         .then(function (objects) {
-            var newjson = objects;
-            res.render('getusers.jade', {
-                vizJson: JSON.stringify(newjson)
-            });
 
+            for ( var i in objects) {
+                 username[i] = objects[i].username;
+                console.log(username[i]);
+            }
 
-
+            res.render('getusers', {
+                    vizJson: username
+                });
             /*var query = Bapp.Class('user').Query();
              query.toJSON().exec()
              .then(function(objects){
