@@ -3,7 +3,7 @@ var router = express.Router();
 
 // built.io sdk initialization
 var Built = require ('built.io');
-var Bapp = Built.App('blt07bf06f5ef0754cb').setMasterKey('blt68fc7fbb4a8579ca').setHost('api.built.io');
+var Bapp = Built.App('blt07bf06f5ef0754cb').setMasterKey('blt68fc7fbb4a8579ca').setHost('api.built.io').persistSessionWith(Built.Session.COOKIE);
 
 router.get('/', function(req, res, next) {
     res.render('index', { title: 'Express' });
@@ -32,7 +32,6 @@ router.get('/getusers', function(req, res) {
 });
 
 router.get('/edit/:uid', function(req, res) {
-
    var user = Bapp.User();
         user.fetchUserUidByEmail(req.params.uid)
             .then(function(user){
@@ -41,7 +40,7 @@ router.get('/edit/:uid', function(req, res) {
             })
     res.render ('edit');
 })
-
+/*
 router.get('/edit', function(req, res) {
 var query  = Bapp.Class('built_io_application_user').Query();
 query.where('email', value).toJSON().exec()
@@ -49,26 +48,22 @@ query.where('email', value).toJSON().exec()
         console.log (objects);
     });
 
-})
+})*/
 
 // todo -- prefetch values of email  and username
 
 router.post("/edit", function(req, res){
     var user = Bapp.User(value).updateUserProfile(
         {
-          //  email : req.body.email,
-            username : req.body.username
-            /*first_name: "john",
-            last_name: "joseph*/
-        })
-        .then(function(user) {
-            console.log(user.toJSON())
-        }, function(error) {
-
-        });
+            email : req.body.email,
+            Username : req.body.username
+        }).then(function(user) {
+            console.log(user.toJSON());
+            console.log (value );
+            console.log ("user : " + user)
+            });
     res.redirect('display');
 });
-
 
 router.get('/display', function(req, res) {
     var query = Bapp.Class('built_io_application_user').Query();
