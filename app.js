@@ -12,6 +12,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var router = express.Router();
+
 var app = express();
 
 // view engine setup
@@ -50,6 +52,7 @@ if (app.get('env') === 'development') {
     });
   });
 }
+
 
 // production error handler
 // no stacktraces leaked to user

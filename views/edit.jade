@@ -10,11 +10,9 @@ html
         script(src='/javascripts/jquery-validate.bootstrap-tooltip.js')
 block content
     div.loginform
-        form(method="post", id='loginform', action="/login")
-            input(type="email", name="email", id="cpword", placeholder="Enter email")
+        form(method="post" id='editform' action="/edit")
             input(type="username", name="username", id="uname", placeholder="Enter username")
-            input(type="password", name="password", id ="pword", placeholder="Enter Password")
-            input(type="submit", class="btn btn-primary btn-block btn-large", value="submit")
+            input(type="submit", class="btn btn-primary", value="edit and submit")
 
-
-
+            //  input(type="password", name="password", id ="pword", placeholder="Enter password")
+            //input(type="email", name="email", id="cpword", placeholder="Enter email")
