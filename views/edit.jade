@@ -1,17 +1,10 @@
-doctype html
-html
-    head
-        title= sample
-        link(rel='stylesheet', href='/stylesheets/style.css')
-        link(rel="stylesheet", type="text/css", href="/stylesheets/bootstrap.css")
-        link(rel="stylesheet", type="text/css", href="/stylesheets/style1.css")
-        script(src='/javascripts/jquery.js')
-        script(src='/javascripts/bootstrap.js')
-        script(src='/javascripts/jquery-validate.bootstrap-tooltip.js')
+extends layout
 block content
     div.loginform
-        form(method="post" id='editform' action="/edit")
-            input(type="email", name="email", id="cpword", placeholder="Enter email")
-            input(type="username", name="username", id="uname", placeholder="Change username")
+        form(method="post" id='editform' action="/update")
+            input(type="email", name="email", id="cpword", placeholder="Enter email", value="#{user.email}" )
+            input(type="username", name="username", id="uname", placeholder="Change username", value="#{user.Username}")
             input(type="submit", class="btn btn-primary", value="edit and submit")
+            div
+                = JSON.stringify(user)
 

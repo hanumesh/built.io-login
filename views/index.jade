@@ -1,13 +1,4 @@
-doctype html
-html
-    head
-        title= sample
-        link(rel='stylesheet', href='/stylesheets/style.css')
-        link(rel="stylesheet", type="text/css", href="/stylesheets/bootstrap.css")
-        link(rel="stylesheet", type="text/css", href="/stylesheets/style1.css")
-        script(src='/javascripts/jquery.js')
-        script(src='/javascripts/bootstrap.js')
-        script(src='/javascripts/jquery-validate.bootstrap-tooltip.js')
+extends layout
 block content
     div.loginform
         form(method="post", id='loginform', action="/login")
@@ -15,6 +6,3 @@ block content
             input(type="username", name="username", id="uname", placeholder="Enter username")
             input(type="password", name="password", id ="pword", placeholder="Enter Password")
             input(type="submit", class="btn btn-primary btn-block btn-large", value="submit")
-
-
-

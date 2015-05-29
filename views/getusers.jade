@@ -1,4 +1,13 @@
+extends layout
 block content
-    each user in vizJson
-        div
-            a(href="/edit/#{user.uid}") #{user.email}
+    each user in users
+        div.column
+            td
+                br
+                span &nbsp &nbsp &nbsp &nbsp
+                input(type="submit", class="btn btn-primary", value="edit")
+                span &nbsp &nbsp &nbsp &nbsp
+                input(type="submit", class="btn btn-primary", value="delete")
+                span &nbsp &nbsp &nbsp &nbsp
+                a(href="/edit/#{user.uid}") #{user.email}
+
