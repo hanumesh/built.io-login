@@ -1,13 +1,22 @@
 extends layout
 block content
+    button(onclick="move()")  HOME
+    span &nbsp &nbsp &nbsp &nbsp
+            script.
+                function move() {
+                    window.location.href = '/'
+                }
+
     each user in users
         div.column
             td
                 br
                 span &nbsp &nbsp &nbsp &nbsp
-                input(type="submit", class="btn btn-primary", value="edit")
-                span &nbsp &nbsp &nbsp &nbsp
-                input(type="submit", class="btn btn-primary", value="delete")
-                span &nbsp &nbsp &nbsp &nbsp
+                input(type='button', value='edit', onclick='editemail()')
                 a(href="/edit/#{user.uid}") #{user.email}
+                span &nbsp &nbsp &nbsp &nbsp
+                input(type='button', value='delete', onclick='deletemail()')
+                a(href="/delete/#{user.uid}") #{user.email}
+                span &nbsp &nbsp &nbsp &nbsp
+
 
