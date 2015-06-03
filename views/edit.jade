@@ -3,8 +3,6 @@ block content
     div.loginform
         form(method="post" id='editform' action="/update")
             input(type="email", name="email", id="cpword", placeholder="Enter email", value="#{user.email}" )
-            input(type="username", name="username", id="uname", placeholder="Change username", value="#{user.Username}")
+            input(type="Username", name="Username", id="uname", placeholder="Change username", value="#{user.Username}")
             input(type="submit", class="btn btn-primary", value="edit and submit")
-            div
-                = JSON.stringify(user)
 

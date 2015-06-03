@@ -1,36 +1,131 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/bin/npm', 'start' ]
+1 verbose cli [ 'node', '/usr/bin/npm', 'install' ]
 2 info using npm@2.10.0
 3 info using node@v0.10.25
 4 verbose node symlink /usr/bin/node
-5 verbose run-script [ 'prestart', 'start', 'poststart' ]
-6 info prestart built-login@0.0.0
-7 info start built-login@0.0.0
-8 verbose unsafe-perm in lifecycle true
-9 info built-login@0.0.0 Failed to exec start script
-10 verbose stack Error: built-login@0.0.0 start: `node ./bin/www`
-10 verbose stack Exit status 1
-10 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
-10 verbose stack     at EventEmitter.emit (events.js:98:17)
-10 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-10 verbose stack     at ChildProcess.EventEmitter.emit (events.js:98:17)
-10 verbose stack     at maybeClose (child_process.js:743:16)
-10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:810:5)
-11 verbose pkgid built-login@0.0.0
-12 verbose cwd /home/hanumesh/code/Login-code/built-login
-13 error Linux 3.13.0-53-generic
-14 error argv "node" "/usr/bin/npm" "start"
-15 error node v0.10.25
-16 error npm  v2.10.0
-17 error code ELIFECYCLE
-18 error built-login@0.0.0 start: `node ./bin/www`
-18 error Exit status 1
-19 error Failed at the built-login@0.0.0 start script 'node ./bin/www'.
-19 error This is most likely a problem with the built-login package,
-19 error not with npm itself.
-19 error Tell the author that this fails on your system:
-19 error     node ./bin/www
-19 error You can get their info via:
-19 error     npm owner ls built-login
-19 error There is likely additional logging output above.
-20 verbose exit [ 1, true ]
+5 verbose readDependencies loading dependencies from /home/hanumesh/code/Login-code/built-login/package.json
+6 verbose install where, deps [ '/home/hanumesh/code/Login-code/built-login',
+6 verbose install   [ 'body-parser',
+6 verbose install     'cookie-parser',
+6 verbose install     'debug',
+6 verbose install     'express',
+6 verbose install     'google-auth-library',
+6 verbose install     'googleapis',
+6 verbose install     'jade',
+6 verbose install     'morgan',
+6 verbose install     'passport',
+6 verbose install     'passport-google',
+6 verbose install     'passport-google-oauth',
+6 verbose install     'passport-local',
+6 verbose install     'reflux',
+6 verbose install     'serve-favicon' ] ]
+7 verbose install where, peers [ '/home/hanumesh/code/Login-code/built-login', [] ]
+8 verbose installManyTop reading for lifecycle /home/hanumesh/code/Login-code/built-login/package.json
+9 info preinstall built-login@0.0.0
+10 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/body-parser/package.json
+11 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/cookie-parser/package.json
+12 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/debug/package.json
+13 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/express/package.json
+14 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/express-namespace/package.json
+15 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/express-resource/package.json
+16 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/google-auth-library/package.json
+17 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/googleapis/package.json
+18 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/jade/package.json
+19 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/morgan/package.json
+20 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/passport/package.json
+21 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/passport-google/package.json
+22 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/passport-google-oauth/package.json
+23 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/passport-local/package.json
+24 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/react/package.json
+25 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/react-async/package.json
+26 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/react-router-component/package.json
+27 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/reflux/package.json
+28 verbose installManyTop reading scoped package data from /home/hanumesh/code/Login-code/built-login/node_modules/serve-favicon/package.json
+29 info package.json express-namespace@0.1.1 No repository field.
+30 info package.json express-namespace@0.1.1 No license field.
+31 info package.json passport-google@0.3.0 No license field.
+32 info package.json passport-google-oauth@0.2.0 No license field.
+33 info package.json passport-local@1.0.0 No license field.
+34 info package.json express-resource@1.0.0 No repository field.
+35 info package.json express-resource@1.0.0 No license field.
+36 verbose readDependencies loading dependencies from /home/hanumesh/code/Login-code/built-login/package.json
+37 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/body-parser/package.json
+38 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/cookie-parser/package.json
+39 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/debug/package.json
+40 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/express/package.json
+41 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/express-namespace/package.json
+42 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/express-resource/package.json
+43 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/google-auth-library/package.json
+44 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/googleapis/package.json
+45 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/jade/package.json
+46 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/morgan/package.json
+47 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/passport/package.json
+48 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/passport-google/package.json
+49 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/passport-google-oauth/package.json
+50 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/passport-local/package.json
+51 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/react/package.json
+52 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/react-async/package.json
+53 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/react-router-component/package.json
+54 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/reflux/package.json
+55 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/serve-favicon/package.json
+56 verbose targetResolver reading package data from /home/hanumesh/code/Login-code/built-login/node_modules/.bin/jade/package.json
+57 verbose already installed skipping reflux@* /home/hanumesh/code/Login-code/built-login
+58 verbose already installed skipping serve-favicon@~2.2.1 /home/hanumesh/code/Login-code/built-login
+59 verbose already installed skipping body-parser@~1.12.4 /home/hanumesh/code/Login-code/built-login
+60 verbose already installed skipping cookie-parser@~1.3.5 /home/hanumesh/code/Login-code/built-login
+61 verbose already installed skipping debug@~2.2.0 /home/hanumesh/code/Login-code/built-login
+62 verbose already installed skipping google-auth-library@^0.9.6 /home/hanumesh/code/Login-code/built-login
+63 verbose already installed skipping express@~4.12.4 /home/hanumesh/code/Login-code/built-login
+64 verbose already installed skipping googleapis@^2.0.4 /home/hanumesh/code/Login-code/built-login
+65 verbose already installed skipping jade@~1.9.2 /home/hanumesh/code/Login-code/built-login
+66 verbose already installed skipping morgan@~1.5.3 /home/hanumesh/code/Login-code/built-login
+67 verbose already installed skipping passport@^0.2.2 /home/hanumesh/code/Login-code/built-login
+68 silly cache add args [ 'passport-google@*\'', null ]
+69 verbose cache add spec passport-google@*'
+70 verbose already installed skipping passport-google-oauth@* /home/hanumesh/code/Login-code/built-login
+71 silly cache add parsed spec { raw: 'passport-google@*\'',
+71 silly cache add   scope: null,
+71 silly cache add   name: 'passport-google',
+71 silly cache add   rawSpec: '*\'',
+71 silly cache add   spec: '*\'',
+71 silly cache add   type: 'tag' }
+72 silly addNamed passport-google@*'
+73 verbose addNamed "*'" is being treated as a dist-tag for passport-google
+74 info addNameTag [ 'passport-google', '*\'' ]
+75 silly mapToRegistry name passport-google
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry uri https://registry.npmjs.org/passport-google
+79 verbose addNameTag registry:https://registry.npmjs.org/passport-google not in flight; fetching
+80 verbose already installed skipping passport-local@^1.0.0 /home/hanumesh/code/Login-code/built-login
+81 verbose get https://registry.npmjs.org/passport-google not expired, no request
+82 silly addNameTag next cb for passport-google with tag *'
+83 verbose stack Error: No compatible version found: passport-google@'*''
+83 verbose stack Valid install targets:
+83 verbose stack ["0.1.0","0.1.1","0.2.0","0.3.0"]
+83 verbose stack
+83 verbose stack     at installTargetsError (/usr/lib/node_modules/npm/lib/cache/add-named.js:262:12)
+83 verbose stack     at next (/usr/lib/node_modules/npm/lib/cache/add-named.js:82:10)
+83 verbose stack     at RES (/usr/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+83 verbose stack     at f (/usr/lib/node_modules/npm/node_modules/once/once.js:17:25)
+83 verbose stack     at CachingRegistryClient.get_ (/usr/lib/node_modules/npm/lib/cache/caching-client.js:125:16)
+83 verbose stack     at /usr/lib/node_modules/npm/lib/cache/caching-client.js:91:14
+83 verbose stack     at evalmachine.<anonymous>:268:14
+83 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
+83 verbose stack     at Object.oncomplete (evalmachine.<anonymous>:107:15)
+84 verbose cwd /home/hanumesh/code/Login-code/built-login
+85 error Linux 3.13.0-53-generic
+86 error argv "node" "/usr/bin/npm" "install"
+87 error node v0.10.25
+88 error npm  v2.10.0
+89 error code ETARGET
+90 error notarget No compatible version found: passport-google@'*''
+90 error notarget Valid install targets:
+90 error notarget ["0.1.0","0.1.1","0.2.0","0.3.0"]
+90 error notarget
+90 error notarget This is most likely not a problem with npm itself.
+90 error notarget In most cases you or one of your dependencies are requesting
+90 error notarget a package version that doesn't exist.
+90 error notarget
+90 error notarget It was specified as a dependency of 'built-login'
+91 verbose exit [ 1, true ]

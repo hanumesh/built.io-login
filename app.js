@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
+var passport = require ('passport');
 var router = express.Router();
 
 var app = express();
@@ -37,6 +37,7 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
 
 // error handlers
 // development error handler
